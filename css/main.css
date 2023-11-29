@@ -28,7 +28,7 @@ a {
 }
 
 body {
-    background-image: url("img/coffee-shop-cat.gif");
+    background-image: url("img/coffee-shop-cat.gif"); /* Own folder due to the CSS file placement */
     background-repeat: no-repeat;
     background-size: cover;
 }
