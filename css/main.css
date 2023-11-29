@@ -28,7 +28,7 @@ a {
 }
 
 body {
-    background-image: url("img/coffee-shop-cat.gif");
+    background-image: url("img/coffee-shop-cat.gif"); /* Own folder due to the CSS file placement */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -50,9 +50,12 @@ input[type=radio] {
     width: 10%;
     height: 2em;
 }
+/* End of base elements */
 
 /*-------------------------------------*/
 
+
+/* Start of elements */
 .game {
     display: flex;
     flex-direction: column;
@@ -139,8 +142,7 @@ input[type=radio] {
     border: solid 2px black;
 }
 
-
-
+/* Stein Saks Papir specific */
 .options {
     display: flex;
     width: 50vw;
@@ -216,12 +218,8 @@ input[type=radio] {
     border: solid 2px black;
 }
 
-#score {
-    font-size: 60px;
-    color: black;
-    margin: 20px;
-}
 
+/* Quiz */
 .questions {
     font-size: 30px;
     background-color: azure;
@@ -234,8 +232,7 @@ input[type=radio] {
     border: solid 2px black;
 }
 
-
-
+/* Tilbake button */
 .tilbake {
     border: solid 2px orange;
     border-radius: 10px;
@@ -249,6 +246,14 @@ input[type=radio] {
     font-size: 30px;
     padding: 10px;
 }
+
+#score {
+    font-size: 60px;
+    color: black;
+    margin: 20px;
+}
+/* End of elements */
+
 
 @media screen and (max-width: 612px) {
     .title {
