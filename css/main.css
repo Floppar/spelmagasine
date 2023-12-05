@@ -253,7 +253,7 @@ input[type=radio] {
 }
 /* End of elements */
 
-
+/* At-rule */
 @media screen and (max-width: 612px) {
     .title {
         text-align: center;
@@ -268,4 +268,4 @@ input[type=radio] {
     .options {
         width: 100vw;
     }
-}
+} /* To make the results appear in the SSP after completing it. */
