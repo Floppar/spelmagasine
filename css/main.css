@@ -48,7 +48,7 @@ button {
 input[type=radio] {
     border: 0px;
     width: 10%;
-    height: 2em;
+    height: 2em; /*em means "original value" times whatever number */
 }
 /* End of base elements */
 
@@ -57,11 +57,11 @@ input[type=radio] {
 
 /* Start of elements */
 .game {
-    display: flex;
+    display: flex; /* Press the boxes inside togheter */
     flex-direction: column;
     height: 100vh;
-    width: 100vw;
-    justify-content: center;
+    width: 100vw; /* % of width relative to the screen*/
+    justify-content: center; /* How much space for the thing */
     align-items: center;
 }
 
@@ -72,11 +72,7 @@ input[type=radio] {
     background-color: gold;
     font-size: 20px;
     margin: 30px;
-}
-
-.send {
-    font-size: 30px;
-}
+} /* How many rounds left for you */
 
 .score {
     display: flex;
@@ -84,15 +80,15 @@ input[type=radio] {
     justify-content: space-evenly;
     position: absolute;
     top: 70px;
-    z-index: 1;
+    z-index: 1; /* Basically which layer is in front of the other layer. Higher z-index makes you stand more in the front */
 }
 
-.p-count,
-.c-count {
+.p-count, /* player's count */
+.d-count {
     text-align: center;
     font-size: 1.5rem;
     margin-top: 1rem;
-}
+} /* computer's score */
 
 .title {
     position: absolute;
@@ -103,22 +99,11 @@ input[type=radio] {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-.qzti {
-    position: fixed;
-    top: 0;
-    font-size: 100px;
-    color: brown;
-    z-index: 2;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
 .top {
     padding-top: 50px;
 }
 
-.gamescreen {
+.gamescreen { 
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: azure;
@@ -126,7 +111,7 @@ input[type=radio] {
     border: solid 2px black;
     margin-top: 100px;
     padding-top: 10px;
-}
+} /* Main menu's boxes and links */
 
 .block {
     padding: 10px;
@@ -140,7 +125,7 @@ input[type=radio] {
     padding-bottom: 10px;
     border-radius: 10px;
     border: solid 2px black;
-}
+} /* For the Om Meg box */
 
 /* Stein Saks Papir specific */
 .options {
@@ -148,7 +133,7 @@ input[type=radio] {
     width: 50vw;
     justify-content: space-evenly;
     margin-top: 2rem;
-}
+} /* For the three options in SSP */
 
 .stein,
 .papir,
@@ -161,7 +146,7 @@ input[type=radio] {
     color: azure;
     cursor: pointer;
     font-size: 20px;
-}
+} /*for the SSP buttons */
 
 .move {
     font-size: 2rem;
@@ -171,7 +156,7 @@ input[type=radio] {
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 10px;
-}
+} /* The text over the buttons */
 
 .reload {
     display: none;
@@ -181,7 +166,7 @@ input[type=radio] {
     border: solid 2px black;
     border-radius: 10px;
     cursor: pointer;
-}
+} /* If you want to play SSP again ;) */
 
 .result {
     margin-top: 20px;
@@ -196,6 +181,9 @@ input[type=radio] {
     justify-content: center;
     color: black;
 }
+
+
+/* Quiz */
 
 .optionq {
     font-size: 40px;
@@ -218,8 +206,19 @@ input[type=radio] {
     border: solid 2px black;
 }
 
+.send {
+    font-size: 30px;
+}
 
-/* Quiz */
+.qzti {
+    position: fixed;
+    top: 0;
+    font-size: 100px;
+    color: brown;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} /* Quiz'es title. Needed it's own element to avoit overlapping */
+
 .questions {
     font-size: 30px;
     background-color: azure;
