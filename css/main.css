@@ -4,7 +4,7 @@ brown, beige, orange, black and azure.
 
 * {
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; /* So no underline under links */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
